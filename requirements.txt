@@ -1,0 +1,5 @@
+streamlit
+webbrowser
+pandas
+datetime  
+plotly.express 
