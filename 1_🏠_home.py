@@ -12,7 +12,7 @@ st.set_page_config(
 
 # Verificar e carregar o DataFrame na sessão do Streamlit
 if "data" not in st.session_state:
-    df_data = pd.read_csv("datasets/CLEAN_FIFA23_official_data.csv", index_col=0)
+    df_data = pd.read_csv("CLEAN_FIFA23_official_data.csv", index_col=0)
     df_data = df_data[df_data["Contract Valid Until"] >= datetime.today().year]
     df_data = df_data[df_data["Value(£)"] > 0]
     df_data = df_data.sort_values(by="Overall", ascending=False)
